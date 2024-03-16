@@ -8,26 +8,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="left">
-      <h1>MAGIC EIGHT BALL</h1>
-      <form>
-        <label for="question">Ask me a question</label><br />
-        <input
-          type="text"
-          id="question"
-          name="question"
-          value="What is on your mind?"
-        /><br />
-        <button type="button" class="roll">Click Me!</button>
-      </form>
-    </div>
-    <span class="ball" class="horizontal-shake">
-      <div class="circle">
-        <div class="triangle">
-          <div class="answer"></div>
-        </div>
+    <h1>MAGIC EIGHT BALL</h1>
+    <main>
+      <div class="left">
+        <form>
+          <label for="question">Ask me a question</label><br />
+          <input
+            type="text"
+            id="question"
+            name="question"
+            value="What is on your mind?"
+          /><br />
+          <button type="button" class="roll">Click Me!</button>
+        </form>
+        <div class="inputQuestion"></div>
       </div>
-    </span>
+
+      <span class="ball" class="horizontal-shake">
+        <div class="circle">
+          <div class="triangle">
+            <div class="answer"></div>
+          </div>
+        </div>
+      </span>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
