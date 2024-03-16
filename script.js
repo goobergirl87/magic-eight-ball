@@ -1,5 +1,6 @@
 "use strict";
 
+const form = document.querySelector("form");
 const button = document.querySelector(".roll");
 const answer = document.querySelector(".answer");
 const ball = document.querySelector(".ball");
@@ -9,6 +10,7 @@ const rollTheBall = function () {
   setTimeout(showAnswer, 3000);
   myStopFunction();
   button.removeEventListener("click", rollTheBall);
+  form.classList.add("hide");
 };
 
 const showAnswer = function () {
