@@ -19,13 +19,18 @@ const rollTheBall = function () {
 const showAnswer = function () {
   answer.textContent =
     prophecies[Math.floor(Math.random() * prophecies.length)];
+  setTimeout(askAgain, 3000);
+};
+
+const askAgain = function () {
+  const askAgainButton = document.createElement("button");
+  askAgainButton.innerHTML = "I got more questions";
+  document.querySelector(".left").appendChild(askAgainButton);
 };
 
 function myStopFunction() {
   clearTimeout(showAnswer);
 }
-
-// timer to show the prophecy and shaking during the timer
 
 const prophecies = [
   "It is certain",
