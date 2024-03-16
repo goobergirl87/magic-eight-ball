@@ -4,6 +4,8 @@ const form = document.querySelector("form");
 const button = document.querySelector(".roll");
 const answer = document.querySelector(".answer");
 const ball = document.querySelector(".ball");
+const inputQuestion = document.getElementById("question").value;
+const inputQuestionField = document.querySelector(".inputQuestion");
 
 const rollTheBall = function () {
   ball.classList.add("shaking");
@@ -11,6 +13,7 @@ const rollTheBall = function () {
   myStopFunction();
   button.removeEventListener("click", rollTheBall);
   form.classList.add("hide");
+  inputQuestionField.textContent = inputQuestion;
 };
 
 const showAnswer = function () {
