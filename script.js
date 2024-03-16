@@ -2,8 +2,14 @@
 
 const button = document.querySelector(".roll");
 const answer = document.querySelector(".answer");
+const ball = document.querySelector(".ball");
 
 const rollTheBall = function () {
+  ball.classList.add("shaking");
+  setTimeout(showAnswer, 3000);
+};
+
+const showAnswer = function () {
   answer.textContent =
     prophecies[Math.floor(Math.random() * prophecies.length)];
 };
