@@ -80,3 +80,7 @@ span.shaking {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+.hide {
+  opacity: 0%;
+}
