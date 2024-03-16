@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circle {
+}
+
+.triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-top: 130px solid blue;
+}
+
+.answer {
+  display: flex;
+  color: white;
+  margin-top: -150px;
+  text-align: center;
+}
