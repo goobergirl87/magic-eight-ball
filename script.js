@@ -7,12 +7,18 @@ const ball = document.querySelector(".ball");
 const rollTheBall = function () {
   ball.classList.add("shaking");
   setTimeout(showAnswer, 3000);
+  myStopFunction();
+  button.removeEventListener("click", rollTheBall);
 };
 
 const showAnswer = function () {
   answer.textContent =
     prophecies[Math.floor(Math.random() * prophecies.length)];
 };
+
+function myStopFunction() {
+  clearTimeout(showAnswer);
+}
 
 // timer to show the prophecy and shaking during the timer
 
