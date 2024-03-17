@@ -4,8 +4,10 @@ const form = document.querySelector("form");
 const button = document.querySelector(".roll");
 const answer = document.querySelector(".answer");
 const ball = document.querySelector(".ball");
-const inputQuestion = document.getElementById("question").value;
+const inputQuestion = document.getElementById("question");
 const inputQuestionField = document.querySelector(".inputQuestion");
+const askAgainButton = document.createElement("button");
+askAgainButton.innerHTML = "I got more questions";
 
 const rollTheBall = function () {
   ball.classList.add("shaking");
@@ -13,24 +15,30 @@ const rollTheBall = function () {
   myStopFunction();
   button.removeEventListener("click", rollTheBall);
   form.classList.add("hide");
-  inputQuestionField.textContent = inputQuestion;
+  inputQuestionField.textContent = inputQuestion.value;
 };
 
 const showAnswer = function () {
   answer.textContent =
     prophecies[Math.floor(Math.random() * prophecies.length)];
-  setTimeout(askAgain, 3000);
+  setTimeout(askAgain, 2000);
 };
 
 const askAgain = function () {
-  const askAgainButton = document.createElement("button");
-  askAgainButton.innerHTML = "I got more questions";
   document.querySelector(".left").appendChild(askAgainButton);
 };
 
 function myStopFunction() {
   clearTimeout(showAnswer);
 }
+
+const restart = function () {
+  form.classList.remove("hide");
+  askAgainButton.classList.add("hide");
+  answer.textContent = "";
+  inputQuestionField.textContent = "";
+  button.addEventListener("click", rollTheBall);
+};
 
 const prophecies = [
   "It is certain",
@@ -57,3 +65,4 @@ const prophecies = [
 ];
 
 button.addEventListener("click", rollTheBall);
+askAgainButton.addEventListener("click", restart);
