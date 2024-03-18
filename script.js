@@ -25,7 +25,7 @@ const showAnswer = function () {
 };
 
 const askAgain = function () {
-  document.querySelector(".left").appendChild(askAgainButton);
+  document.querySelector("main").appendChild(askAgainButton);
 };
 
 function myStopFunction() {
@@ -34,6 +34,7 @@ function myStopFunction() {
 
 const restart = function () {
   form.classList.remove("hide");
+  ball.classList.remove("shaking");
   askAgainButton.classList.add("hide");
   answer.textContent = "";
   inputQuestionField.textContent = "";
