@@ -70,5 +70,5 @@ const prophecies = [
   "Very doubtful",
 ];
 
-button.addEventListener("click", rollTheBall);
+button.addEventListener("click", validate);
 askAgainButton.addEventListener("click", restart);
