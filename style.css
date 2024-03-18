@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(28, 28, 28);
 }
 
 main {
@@ -27,6 +27,11 @@ h1 {
   font-size: 40px;
   font-weight: 600;
   color: white;
+}
+
+form {
+  line-height: 32px;
+  text-align: center;
 }
 
 .ball {
