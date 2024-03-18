@@ -9,6 +9,11 @@ const inputQuestionField = document.querySelector(".inputQuestion");
 const askAgainButton = document.createElement("button");
 askAgainButton.innerHTML = "I got more questions";
 
+const validate = function () {
+  const x = inputQuestion.value;
+  x == "" ? alert("Question must be filled out") : rollTheBall();
+};
+
 const rollTheBall = function () {
   ball.classList.add("shaking");
   setTimeout(showAnswer, 3000);
