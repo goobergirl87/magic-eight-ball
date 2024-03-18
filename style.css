@@ -3,19 +3,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(23, 23, 23);
 }
 
 main {
   display: flex;
-}
-
-.left {
-  display: flex;
   flex-direction: column;
-  width: 300px;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .ball {
@@ -28,6 +32,7 @@ main {
   background-color: black;
   position: relative;
   text-align: center;
+  box-shadow: rgba(203, 203, 203, 0.15) 0px 48px 100px 0px;
 }
 
 .circle {
@@ -74,12 +79,18 @@ main {
 
 .answer {
   display: flex;
+  justify-content: center;
+  width: 30px;
   color: white;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: -10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 span.shaking {
