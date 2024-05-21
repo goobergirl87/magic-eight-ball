@@ -6,9 +6,6 @@ Besides fulfilling myself a childhood dream, The Magic Eight Ball gave me the op
 
 <div>
     <a href="https://www.loom.com/share/5a2590214b984f5c89bae951b1fe5937">
-      <p>Loom | Free Screen & Video Recording Software | Loom - 21 May 2024 - Watch Video</p>
-    </a>
-    <a href="https://www.loom.com/share/5a2590214b984f5c89bae951b1fe5937">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5a2590214b984f5c89bae951b1fe5937-with-play.gif">
     </a>
   </div>
